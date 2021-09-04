@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block containt %}
+
+{% for post in x  %}
+
+  <div class="card-header">
+ <h2> Id :{{post.id}}</h2> 
+ <h2>Name : {{post.Course_name}}</h2>
+   
+</div>
+
+
+
+
+ <h3>delete post </h3>
+<form action="/Delete" enctype="multipart/form-data" method="POST">
+   <h3>enter id to delete</h3>
+
+
+   <input type="text" name="post" /> <br>
+<input type="submit" value="Delete Course"/>
+</form>
+{% endfor %}
+
+{% endblock  %}
+
+ 

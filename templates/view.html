@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block containt %}
+
+{% for post in x  %}
+<div class="card">
+  <div class="card-header">
+  <a href="/post/{{post.id}}" class="button"><h2>{{post.Course_name}}</h2></a>
+   <h5>{{post.Course_date}}</h5>
+  </div>
+  <div class="card-body">
+<img src="/img/{{post.id}}" class="rounded mx-auto d-block" width="400" height="400"><br><br>
+<p>{{post.Course_Descreption}}</p><br>
+  </div>
+</div>
+{% endfor %}
+
+{% endblock  %}
+
+ 

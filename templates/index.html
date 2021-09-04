@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+</head>
+<body>
+
+<form action="/upload" enctype="multipart/form-data" method="POST">
+   <h3>post name</h3>
+   <input type="text" name="name" /> <br>
+   <h3>post Video</h3>
+   <input type="text" name="link" /> <br>
+   <h3>post descrption</h3>
+   <textarea  name="descrption" rows="4" cols="50">
+   </textarea><br>
+   <h3>post img</h3>
+   <input type="file" name="pic" /><br>
+   <input type="submit" value="Add course"/>
+</form>
+
+
+
+ 
+<form action="/dele" enctype="multipart/form-data" method="POST">
+   
+<input type="submit" value="Delete Course"/>
+</form>
+ 
+</body>
+</html>
